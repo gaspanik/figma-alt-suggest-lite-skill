@@ -4,7 +4,7 @@ Figmaの FRAME / SECTION / COMPONENT / COMPONENT_SET を選択して実行する
 
 これは有料講座「[KMRVID Figma Skills](https://kmrvid-claude-skills.gaspanik.workers.dev/figma/)」で提供されているフル版`figma-alt-suggest`（提案の確認後、Dev Modeのアノテーションとして書き込む機能つき）から、書き込み機能を取り除いたトリムダウン版です。画像の検出と提案レポートの表示までを行い、Figmaファイルへの書き込みは一切行わない「診断＆レポートのみ」の軽量版です。**画像を1枚ずつ実際に見てALT文を考えるとどんな提案が出るか、まず試してみたい方**に向いています。
 
-> **フル版が気になる方へ**: この軽量版は画像の検出・分類・提案ロジック単体を体験いただくものです。フル版では提案の確認後、Figmaの Dev Mode → Annotations パネルに実際に書き込むところまで行えます。他のFigma連携スキル（[`figma-layer-rename-lite`](https://github.com/gaspanik/figma-layer-rename-lite-skill)、[`figma-contrast-check-lite`](https://github.com/gaspanik/figma-contrast-check-lite-skill)など）と組み合わせて使うことも想定しています。全スキルカタログはこちら: [KMRVID Figma Skills README](https://fragrant-edam-563.notion.site/KMRVID-Figma-Skills-README-md-3ad5dae25dd280d69c12c69b277d90b6)
+> **フル版が気になる方へ**: この軽量版は画像の検出・分類・提案ロジック単体を体験いただくものです。フル版では提案の確認後、Figmaの Dev Mode → Annotations パネルに実際に書き込むところまで行えます。同じFigma Design Agent版の[`figma-layer-rename-lite`](https://github.com/gaspanik/figma-layer-rename-lite-skill)と組み合わせて使うことも想定しています（[`figma-contrast-check-lite`](https://github.com/gaspanik/figma-contrast-check-lite-skill)は同系統のチェック用スキルですが、Claude Code + Figma MCP版のため動作環境が異なります — 下記スコープ参照）。全スキルカタログはこちら: [KMRVID Figma Skills README](https://fragrant-edam-563.notion.site/KMRVID-Figma-Skills-README-md-3ad5dae25dd280d69c12c69b277d90b6)
 
 > **有料講座のプレビュー**: 講座内の各種スキルを実際に動かしている様子は、こちらの[YouTube](https://www.youtube.com/@kmrvid/videos)や講座の[無料プレビュー](https://kmrvid.com/apps/ldt-course/course/6922c0ad336ff5545bbff61d/6a40a8485dd31d7633eb902e?locale=ja)（アカウント作成、ログイン不要）に掲載しております。<!-- TODO: 他のliteスキルと同じ汎用プレビューlessonのURLを流用しています。figma-alt-suggest専用のlesson URLがあれば差し替えてください -->
 
@@ -41,7 +41,7 @@ screenshot()で実際の見た目をキャプチャし、周辺のTEXTノード�
 
 - **対象:** 選択内のすべての可視な`IMAGE`フィル（`Rectangle`や`Image 1`のような自動生成名でも対象、名前でのフィルタは行いません）。装飾（アイコン+同義ラベル、背景テクスチャ）か要説明文かを判定し、後者には具体的な内容を書いたALT文を提案します
 - **非対応:** Figmaファイルへの書き込み（アノテーション追加を含む）、ベクターアイコン/イラスト（`IMAGE`フィルを持たない純粋な`VECTOR`/`BOOLEAN_OPERATION`）、ALT以外のアクセシビリティ注釈（ランドマーク・ARIAパターン）、色のコントラスト判定。これらが必要な場合はフル版`figma-alt-suggest`、あるいは`figma-annotate`・`figma-contrast-check`をご利用ください
-- [`figma-contrast-check-lite`](https://github.com/gaspanik/figma-contrast-check-lite-skill)（色のコントラストチェック）と組み合わせると、「配色は読めるか」と「画像は説明されているか」というアクセシビリティの異なる軸を両方カバーできます
+- [`figma-contrast-check-lite`](https://github.com/gaspanik/figma-contrast-check-lite-skill)（色のコントラストチェック）を併用すると、「配色は読めるか」と「画像は説明されているか」というアクセシビリティの異なる軸を両方カバーできます。ただしこちらはClaude Code + Figma MCPサーバーで動くCode版で、動作環境が本スキル（Figma Design Agent版）とは異なります — Figmaのカスタムスキル登録だけでは動かず、別途Claude CodeとFigma MCPサーバーのセットアップが必要です
 
 ---
 
