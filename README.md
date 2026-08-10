@@ -6,7 +6,7 @@ Figmaの FRAME / SECTION / COMPONENT / COMPONENT_SET を選択して実行する
 
 > **フル版が気になる方へ**: この軽量版は画像の検出・分類・提案ロジック単体を体験いただくものです。フル版では提案の確認後、Figmaの Dev Mode → Annotations パネルに実際に書き込むところまで行えます。同じFigma Design Agent版の[`figma-layer-rename-lite`](https://github.com/gaspanik/figma-layer-rename-lite-skill)と組み合わせて使うことも想定しています。`figma-contrast-check`（色のコントラストチェック）もFigma Skills講座内にFigma Design Agent版として収録されており、本スキルと同じ環境で組み合わせて使えます — ただし無料公開している[`figma-contrast-check-lite`](https://github.com/gaspanik/figma-contrast-check-lite-skill)はClaude Code + Figma MCP版で提供されているため、Lite版同士を試す場合は動作環境が異なる点にご注意ください（下記スコープ参照）。全スキルカタログはこちら: [KMRVID Figma Skills README](https://fragrant-edam-563.notion.site/KMRVID-Figma-Skills-README-md-3ad5dae25dd280d69c12c69b277d90b6)
 
-> **有料講座のプレビュー**: 講座内の各種スキルを実際に動かしている様子は、こちらの[YouTube](https://www.youtube.com/@kmrvid/videos)や講座の[無料プレビュー](https://kmrvid.com/apps/ldt-course/course/6922c0ad336ff5545bbff61d/6a40a8485dd31d7633eb902e?locale=ja)（アカウント作成、ログイン不要）に掲載しております。<!-- TODO: 他のliteスキルと同じ汎用プレビューlessonのURLを流用しています。figma-alt-suggest専用のlesson URLがあれば差し替えてください -->
+> **有料講座のプレビュー**: 講座内の各種スキルを実際に動かしている様子は、こちらの[YouTube](https://www.youtube.com/@kmrvid/videos)や講座の[無料プレビュー](https://kmrvid.com/apps/ldt-course/course/6922c0ad336ff5545bbff61d/6a6b17c49dc4e0183716f605?locale=ja)（アカウント作成、ログイン不要）に掲載しております。
 
 ---
 
