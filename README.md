@@ -65,13 +65,17 @@ skills/
 
 ## はじめかた
 
-**1. このリポジトリをclone、もしくはZIPダウンロードして解凍**
+**1. スキルファイルを入手する**
+
+[Releases](https://github.com/gaspanik/figma-alt-suggest-lite-skill/releases) から最新のzip（`figma-alt-suggest-lite-vX.X.X.zip`）をダウンロードして解凍してください。中には `SKILL.md` と `LICENSE` の2ファイルだけが入っています。
+
+エンジニアの方はリポジトリをcloneしても構いません。
 
 ```bash
 git clone https://github.com/gaspanik/figma-alt-suggest-lite-skill
 ```
 
-**2. Figmaのカスタムスキル登録機能で `skills/figma-alt-suggest-lite/SKILL.md` を登録**
+**2. Figmaのカスタムスキル登録機能で `SKILL.md`（clone した場合は `skills/figma-alt-suggest-lite/SKILL.md`）を登録**
 
 **3. キャンバス上で対象のFRAME/SECTION/COMPONENT/COMPONENT_SETを選択**
 
