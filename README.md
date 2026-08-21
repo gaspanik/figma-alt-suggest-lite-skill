@@ -1,5 +1,7 @@
 # figma-alt-suggest-lite — Figma画像のALTテキスト提案（Figma Design Agent 用軽量版）
 
+> *This README is in Japanese only (tied to a Japanese-language paid course). The skill itself works in any language — see [`skills/figma-alt-suggest-lite/SKILL.md`](skills/figma-alt-suggest-lite/SKILL.md) for what it does.*
+
 Figmaの FRAME / SECTION / COMPONENT / COMPONENT_SET を選択して実行すると、選択内のすべての画像（`IMAGE`フィルを持つノード）の実際の見た目を確認し、具体的な日本語ALTテキストを提案する — あるいは装飾画像として説明文不要と判断する — Figma の Design Agent のカスタムスキル機能に登録して利用するスキルです。
 
 これは有料講座「[KMRVID Figma Skills](https://kmrvid-claude-skills.gaspanik.workers.dev/figma/)」で提供されているフル版`figma-alt-suggest`（提案の確認後、Dev Modeのアノテーションとして書き込む機能つき）から、書き込み機能を取り除いたトリムダウン版です。画像の検出と提案レポートの表示までを行い、Figmaファイルへの書き込みは一切行わない「診断＆レポートのみ」の軽量版です。**画像を1枚ずつ実際に見てALT文を考えるとどんな提案が出るか、まず試してみたい方**に向いています。
